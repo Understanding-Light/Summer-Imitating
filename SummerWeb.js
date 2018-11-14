@@ -114,7 +114,7 @@ function setup() {
 }
 
 
-function mouseClicked() {
+function mousePressed() {
   
   start = true;
   if(mouseX > cx-15 && mouseX < cx+15 && mouseY > cy-15 && mouseY < cy+15) {
@@ -178,16 +178,16 @@ function draw() {
   updateDoor();
   
   fill(40);
-  text("René Magritte / Summer / 1939", width-220, 30);
+  text("René Magritte / Summer / 1939", width-190, 30);
   text("X"+mouseX, 20,20);
   text("Y"+mouseY, 80,20);
   
   dropUpdate();
   
-  leaf_r[0] = random(50,100);
-   text(index_leaf, 20,50);
-  text(index_l, 20,70);
-  text(dropCount, 20,90);
+ // leaf_r[0] = random(50,100);
+   //text(index_leaf, 20,50);
+  //text(index_l, 20,70);
+  //text(dropCount, 20,90);
   
  }
 
