@@ -179,8 +179,8 @@ function draw() {
   
   fill(40);
   text("René Magritte / Summer / 1939", width-190, 30);
-  text("X"+mouseX, 20,20);
-  text("Y"+mouseY, 80,20);
+  //text("X"+mouseX, 20,20);
+  //text("Y"+mouseY, 80,20);
   
   dropUpdate();
   
