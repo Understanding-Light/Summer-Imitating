@@ -1,22 +1,142 @@
 <html>
 <head>
-  <meta charset="UTF-8">
 
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"> <!-- font-family: 'Nanum Gothic', sans-serif;-->
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">  <!-- font-family: 'Noto Serif KR', sans-serif;-->
+
+<!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="SummerWeb.js"></script>
  
 
   <!-- This line removes any default padding and style. 
        You might only need one of these values set. -->
-  <style> body {padding: 50; margin: 20;} </style>
+  <style type = "text/css"> 
+  body {
+    width: 1024px;
+  	padding: 20 auto; 
+  	margin: 40 auto;
+  	background-color: #FFF;
+  }
+  div {
+    width: 1024px;
+  	margin: 30px auto; 
+  }
+
+  #defaultCanvas0{
+    display: block;
+    margin: 0;
+  }
+  
+
+  
+  #titleText1 {
+  	margin :20px auto;
+  	text-align :center;
+  	font-size : 45px;
+  	font-weight: 2em;
+  	color: #4C4C4C;
+  	font-family: 'Noto Serif KR', sans-serif;
+  }
+
+  #titleText2 {
+  	text-align : left;
+  	margin-top : 0px;
+  	font-size : 25px;
+  	font-weight: 2em;
+  	color: #4C4C4C;
+  	font-family: 'Noto Serif KR', sans-serif;
+  }
+
+.box1 {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  margin-left: 84px;
+  margin-top: 10px;
+  margin-right: 22px;
+  background-color: #333;
+}
+.box2 {
+  display: inline-block;
+  border-width : 7px;
+  border-color: #5ea8e0;
+  border-style: dashed;
+  width: 365px;
+  height: 248px;
+  margin-left: 18px;
+   margin-top: 30px;
+  margin-right: 70px;
+padding: 20px;
+
+position: relative; top: -80px;
+
+}
+.line {
+	height: 7px;
+	width : 860px;
+	 background-color: #5ea8e0;
+}
+.lineB {
+	height: 40px;
+	width : 860px;
+	 background-color: #5ea8e0;
+}
+#door {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+ .para {
+ 	font-size : 14px;
+ 	width: 350px;
+  	font-weight: 1.5em;
+  	color: #4C4C4C;
+  	font-family: 'Noto Serif KR', sans-serif;
+ }
+#comment{
+	font-size : 14px;
+ 	width: 800px;
+  	font-weight: 1.5em;
+  	color: #4C4C4C;
+  	font-family: 'Noto Serif KR', sans-serif;
+	position: relative; top: -130px; left:460px;
+
+}
+
+   </style>
 </head>
 
 
 
 <body>
- <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
-  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
-  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
-  <script language="javascript" type="text/javascript" src="SummerWeb.js"></script>
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+		<div class = "line"> </div>
+	<div>
+		<h1 id = "titleText1">여름바다로 가는 문 </h1>
+	</div>
+	<div class = "line"> </div>
+			
+	<div class = "box1">
+		<img id = "door" src = "https://i.pinimg.com/originals/2e/34/46/2e344644d73446eaa1fbea4d004c2730.jpg" border="0"  width="400" height="300">
+
+	</div>
+
+<div class = "box2">
+<h1 id = "titleText2">작품 설명</h1>
+ <p class = "para"><b>< 나름의 작품 해석></b> 우리의 상상력은 얼마든지 다른 공간으로 통하는 가상의 문을 만들 수 있는 능력이 있다. 작가는 이러한 인간의 능력을 표현하기 위해서 이러한 그림을 그려낸 것이 아닐까 생각이 든다. </p>
+ <p class = "para"><b><인터렉션></b> 인터렉션은 마우스 왼쪽 클릭시 문이 열리면서 구름이 나오고 뒤에 바다의 모습이 나오는 것이다. 오른쪽 클릭하면 다시 문이 닫히는 것이다. 그리고 구름을 클릭하면 비가 내린다. 비가 내리면 방 안에 신기한 일이 생긴다.
+</p>
+	</div>
+	<div><p id = "comment">* 이 작품은 르네 마그리트의 "Summer"의 작품을 모방하여 응용한 작품입니다.</p></div>
+	<div class="lineB"><div>
+	<div id="sketch-holder">
+		
+
+	</div>
+ 
 </body>
 </html>
